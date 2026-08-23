@@ -16,3 +16,6 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
 server:
   port: 8082
+
+test:
+  config-server: funcionando
