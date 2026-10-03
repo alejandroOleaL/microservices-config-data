@@ -29,9 +29,13 @@ eureka:
 order:
   enabled: true
 management:
+  endpoint:
+    health:
+      show-details: always
+
   endpoints:
     web:
       exposure:
-        include: "refresh, health"
+        include: "refresh, health, circuitbreakers"
 server:
   port: 8081
