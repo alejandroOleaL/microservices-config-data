@@ -4,3 +4,22 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 0
+
+logging:
+  level:
+    root: INFO
+    com.ecommerce: INFO
+
+# --- NUEVA CONFIGURACIÓN SMTP (Mailtrap) ---
+spring:
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 8a1260cf4985f9 #
+    password: bd4af1286987c7 #
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
